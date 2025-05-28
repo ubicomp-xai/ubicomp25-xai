@@ -43,6 +43,11 @@
       } .card-back { background-color: #e6e6e6; transform: rotateY(180deg); }
       .row:not(:last-child) { margin-bottom: 20px; /* Add space between rows
       */ }
+      /* Remove shadow from Past Editions dropdown */
+      #pastEditionsDropdown + .dropdown-menu {
+        text-shadow: none !important;
+        text-align: center;
+      }
     </style>
   </head>
   
@@ -91,6 +96,14 @@
               <a class="nav-link" href="#contact">
                 Contact
               </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="pastEditionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Past Editions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="pastEditionsDropdown">
+                <li><a class="dropdown-item" href="https://ubicomp-xai.github.io/ubicomp24-xai/" target="_blank">2024</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -310,14 +323,13 @@
               on the
               <a href="https://www.ubicomp.org/ubicomp-iswc-2025/authors/formatting/">
                 UbiComp website
-              </a>
-              .
+              </a>.
             </p>
             <p class="text-muted">
               <b>
                 Standard submissions:
               </b>
-              up to 4 pages (including references).
+              up to 4 pages (including references). Accepted standard submissions will be published in the Adjunct Proceedings.
             </p>
             <!-- <p class="text-muted">For camera-ready submission instructions please visit:  <a href="https://www.scomminc.com/pp/acmsig/ubicomp.htm">https://www.scomminc.com/pp/acmsig/ubicomp.htm</a>
             </p> -->
@@ -325,8 +337,8 @@
               <b>
                 Short submissions:
               </b>
-              up to 2 pages (including references). Accepted short submissions will
-              not be published in the ACM Digital Library and Adjunct Proceedings, but
+              up to 2 pages (including references). Accepted short submissions <u>will
+              not</u> be published in the Adjunct Proceedings, but
               will instead be made available on this website.
             </p>
           </div>
@@ -376,12 +388,18 @@
             <h4 class="my-3">
               Submission
             </h4>
-            <!-- <p class="text-muted">Submissions can be made via PCS at <a href="http://new.precisionconference.com/sigchi">http://new.precisionconference.com/sigchi.</a></href></p> -->
             <p class="text-muted">
+              Submissions can be made via PCS at <a href="http://new.precisionconference.com/sigchi">http://new.precisionconference.com/sigchi.</a></href>
+            </p>
+            <p class="text-muted">
+              <b>Submissions now open!</b>
+            </p>
+            <p class='text-muted'>On the submissions tab, please select "SIGCHI" society, the "UbiComp/ISWC 2025" conference, and the “UbiComp/ISWC 2025 XAI for U 2025” track.</p>
+            <!-- <p class="text-muted">
               <b>
                 Submissions will open soon!
               </b>
-            </p>
+            </p> -->
             <!-- <p class='text-muted'>On the submissions tab, please select SIGCHI society, the UbiComp/ISWC 2024
             conference, and the “UbiComp/ISWC 2025 XAI for U” track.</p> -->
           </div>
